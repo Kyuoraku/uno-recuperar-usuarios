@@ -1,0 +1,7 @@
+<h1>
+  Se han encontrado {{ cantidadUsuarios }} usuarios
+</h1>
+<vista-usuario
+  *ngFor="let usuario of usuarios$ | async"
+  [usuario]="usuario">
+</vista-usuario>

@@ -1,0 +1,15 @@
+<div *ngIf="usuario">
+  <mat-card>
+    <mat-card-header>
+      <img mat-card-avatar src="{{usuario.avatar}}" alt="Foto de perfil del usuario">
+      <mat-card-title-group>
+        <mat-card-title>
+          #{{usuario.userId}} / {{usuario.nombre}} {{usuario.apellido}}
+        </mat-card-title>
+        <mat-card-subtitle>
+          <p><i class="material-icons">mail_outline</i> {{usuario.email}}</p>
+        </mat-card-subtitle>
+      </mat-card-title-group>
+    </mat-card-header>
+  </mat-card>
+</div>
